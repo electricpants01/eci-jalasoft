@@ -1,0 +1,200 @@
+[
+  {
+    "Id": "08fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Credit Hold",
+    "LastUpdate": "/Date(1381933373557-0500)/",
+    "OnHoldCode": "CH",
+    "OnHoldCodeId": 1
+  },
+  {
+    "Id": "0bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Waiting For Parts",
+    "LastUpdate": "/Date(1381933428667-0500)/",
+    "OnHoldCode": "WP",
+    "OnHoldCodeId": 2
+  },
+  {
+    "Id": "17fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Waiting Authorization",
+    "LastUpdate": "/Date(1381933422873-0500)/",
+    "OnHoldCode": "WAuth",
+    "OnHoldCodeId": 3
+  },
+  {
+    "Id": "1afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Bad Data From Remote Client",
+    "LastUpdate": "/Date(1381933366303-0500)/",
+    "OnHoldCode": "BadSync",
+    "OnHoldCodeId": 4
+  },
+  {
+    "Id": "26fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Parts Available",
+    "LastUpdate": "/Date(1474557471530-0500)/",
+    "OnHoldCode": "PA",
+    "OnHoldCodeId": 5
+  },
+  {
+    "Id": "28fe4990-03dd-e711-80e2-00155d014830",
+    "Active": false,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CREDIT APPROVAL REQUIRED",
+    "LastUpdate": "/Date(1392828594180-0600)/",
+    "OnHoldCode": "Credit Approval Required",
+    "OnHoldCodeId": 103
+  },
+  {
+    "Id": "32fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Permanent COD",
+    "LastUpdate": "/Date(1381933380167-0500)/",
+    "OnHoldCode": "COD",
+    "OnHoldCodeId": 105
+  },
+  {
+    "Id": "36fe4990-03dd-e711-80e2-00155d014830",
+    "Active": false,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Collection COD",
+    "LastUpdate": "/Date(1381933405460-0500)/",
+    "OnHoldCode": "S",
+    "OnHoldCodeId": 107
+  },
+  {
+    "Id": "3bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Permanent Terminate",
+    "LastUpdate": "/Date(1383620264597-0600)/",
+    "OnHoldCode": "T",
+    "OnHoldCodeId": 108
+  },
+  {
+    "Id": "3dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NEEDS APPROVAL",
+    "LastUpdate": "/Date(1383607066123-0600)/",
+    "OnHoldCode": "APPROVAL",
+    "OnHoldCodeId": 109
+  },
+  {
+    "Id": "41fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ASSISTANCE",
+    "LastUpdate": "/Date(1474557505907-0500)/",
+    "OnHoldCode": "NEED ASSISTANCE",
+    "OnHoldCodeId": 110
+  },
+  {
+    "Id": "44fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "FOLLOW-UP",
+    "LastUpdate": "/Date(1474557547130-0500)/",
+    "OnHoldCode": "FOLLOW-UP",
+    "OnHoldCodeId": 111
+  },
+  {
+    "Id": "47fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALL",
+    "LastUpdate": "/Date(1383607168200-0600)/",
+    "OnHoldCode": "INSTALL",
+    "OnHoldCodeId": 112
+  },
+  {
+    "Id": "4bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "RESEARCH",
+    "LastUpdate": "/Date(1383607194767-0600)/",
+    "OnHoldCode": "RESEARCH",
+    "OnHoldCodeId": 113
+  },
+  {
+    "Id": "4ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "TEST EQUIP",
+    "LastUpdate": "/Date(1383607222567-0600)/",
+    "OnHoldCode": "TEST EQUIP",
+    "OnHoldCodeId": 114
+  },
+  {
+    "Id": "53fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "TICKET",
+    "LastUpdate": "/Date(1383607262077-0600)/",
+    "OnHoldCode": "TICKET",
+    "OnHoldCodeId": 115
+  },
+  {
+    "Id": "56fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "TIME",
+    "LastUpdate": "/Date(1383607282560-0600)/",
+    "OnHoldCode": "TIME",
+    "OnHoldCodeId": 116
+  },
+  {
+    "Id": "59fe4990-03dd-e711-80e2-00155d014830",
+    "Active": false,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CREDIT APPROVAL REQUIRED",
+    "LastUpdate": "/Date(1400243783707-0500)/",
+    "OnHoldCode": "Credit Approval",
+    "OnHoldCodeId": 117
+  },
+  {
+    "Id": "5dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NO ACCESS",
+    "LastUpdate": "/Date(1407439357487-0500)/",
+    "OnHoldCode": "ACCESS",
+    "OnHoldCodeId": 118
+  },
+  {
+    "Id": "60fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP REPAIR",
+    "LastUpdate": "/Date(1474557681530-0500)/",
+    "OnHoldCode": "SHOP",
+    "OnHoldCodeId": 119
+  },
+  {
+    "Id": "62fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Accounts Payable Hold",
+    "LastUpdate": "/Date(1483715451297-0600)/",
+    "OnHoldCode": "AP Hold",
+    "OnHoldCodeId": 120
+  },
+  {
+    "Id": "49084791-44fd-e711-80e5-00155d01f50e",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "Hold per TK",
+    "LastUpdate": "/Date(1516337495427-0600)/",
+    "OnHoldCode": "Hold per TK",
+    "OnHoldCodeId": 121
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_add_parts_to_sc"
+    app:startDestination="@id/selectUsePartsFragment">
+
+    <fragment
+        android:id="@+id/selectUsePartsFragment"
+        android:name="eci.technician.activities.addParts.SelectUsePartFragment"
+        android:label="@string/select_part"
+        tools:layout="@layout/searchable_list" >
+
+        <action
+            android:id="@+id/action_selectUsePartsFragment_to_selectUseBinFragment"
+            app:destination="@id/selectUseBinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectUseBinFragment"
+        android:name="eci.technician.activities.addParts.SelectUseBinFragment"
+        android:label="@string/select_bin"
+        tools:layout="@layout/searchable_list" />
+</navigation>

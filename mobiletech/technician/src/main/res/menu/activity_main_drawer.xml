@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_create_call"
+        android:icon="@drawable/ic_add_nav_icon"
+        android:title="@string/create_call_title" />
+    <item
+        android:id="@+id/nav_completed"
+        android:icon="@drawable/completed"
+        android:title="@string/completed" />
+    <item
+        android:id="@+id/nav_group_calls"
+        android:icon="@drawable/group_calls"
+        android:title="@string/group_calls" />
+    <item
+        android:id="@+id/nav_warehouse"
+        android:icon="@drawable/ic_warehouse"
+        android:title="@string/my_warehouse" />
+    <item
+        android:id="@+id/nav_search_part"
+        android:icon="@drawable/ic_nav_search_part"
+        android:title="@string/search_warehouses" />
+    <item
+        android:id="@+id/nav_request_parts"
+        android:icon="@drawable/ic_request_parts"
+        android:title="@string/request_parts" />
+    <item
+        android:id="@+id/nav_field_transfer"
+        android:icon="@drawable/ic_field_transfer"
+        android:title="@string/field_transfer" />
+    <item
+        android:id="@+id/nav_transfers"
+        android:icon="@drawable/ic_mobiletechtransfericon"
+        android:title="@string/warehouse_transfer" />
+    <item
+        android:id="@+id/nav_equipment_history"
+        android:icon="@drawable/ic_equipment_history"
+        android:title="@string/equipment_history" />
+    <item
+        android:id="@+id/unSync"
+        android:icon="@drawable/ic_nav_refresh"
+        app:actionViewClass="android.widget.TextView"
+        android:title="@string/unsynced_data" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/about"
+        android:title="@string/settings_help_title" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
+</menu>

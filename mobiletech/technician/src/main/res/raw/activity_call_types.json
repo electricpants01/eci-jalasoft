@@ -1,0 +1,52 @@
+[
+  {
+    "ActivityCodeID": 3,
+    "ActivityCodeName": "SL",
+    "Description": "Standard Labor",
+    "LastUpdate": "2008-08-07T06:32:05.093",
+    "ActivityCodeCategoryID": 2,
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Id": "24ffa9f3-1e01-e811-80e5-00155d01f50e"
+  },
+  {
+    "ActivityCodeID": 101,
+    "ActivityCodeName": "Connectivity",
+    "Description": "Connectivity",
+    "LastUpdate": "2013-09-13T21:50:16.293",
+    "ActivityCodeCategoryID": 2,
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Id": "29ffa9f3-1e01-e811-80e5-00155d01f50e"
+  },
+  {
+    "ActivityCodeID": 102,
+    "ActivityCodeName": "Move",
+    "Description": "Move",
+    "LastUpdate": "2013-09-13T21:50:28.687",
+    "ActivityCodeCategoryID": 2,
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Id": "2affa9f3-1e01-e811-80e5-00155d01f50e"
+  },
+  {
+    "ActivityCodeID": 105,
+    "ActivityCodeName": "After Hours",
+    "Description": "After Hours",
+    "LastUpdate": "2014-02-25T10:40:39.54",
+    "ActivityCodeCategoryID": 2,
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Id": "2dffa9f3-1e01-e811-80e5-00155d01f50e"
+  },
+  {
+    "ActivityCodeID": 106,
+    "ActivityCodeName": "ML Connect",
+    "Description": "Malden Connectivity",
+    "LastUpdate": "2014-05-30T16:49:24.787",
+    "ActivityCodeCategoryID": 2,
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Id": "2effa9f3-1e01-e811-80e5-00155d01f50e"
+  }
+]

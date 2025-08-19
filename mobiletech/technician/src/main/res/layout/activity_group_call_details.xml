@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="eci.technician.models.order.GroupCallServiceOrder" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="eci.technician.activities.GroupCallDetailsActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextAppearance="@style/ToolbarTitle" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@{item.customerName}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorHeadingText"
+                        android:textIsSelectable="true"
+                        android:textStyle="bold"
+                        tools:text="Name" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSeparator" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/technician"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text='@{item.technicianName+ " - " + item.technicianNumber}'
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textIsSelectable="true"
+                                tools:text="123456" />
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_received"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@{item.header}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule_time"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.formattedScheduleTime}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        tools:text="123456" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@{item.callNumber_Code}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.callType}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/problem_description"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.description}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/make_model"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.makeModel}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_address"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <Button
+                        android:id="@+id/txtCustomerAddress"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="@{item.customerFullAddress.length()>0}"
+                        android:gravity="center_vertical"
+                        android:minHeight="0dp"
+                        android:padding="0dp"
+                        android:text="@{item.customerFullAddress}"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorHeadingText"
+                        tools:text="123456" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/equipment_id"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <Button
+                        android:id="@+id/btnEquipmentId"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="@{item.equipmentNumber != null}"
+                        android:gravity="center_vertical"
+                        android:minHeight="0dp"
+                        android:padding="0dp"
+                        android:text='@{ item.equipmentNumber == null ? @string/unknown_equipment_item : item.equipmentNumber }'
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorHeadingText"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:text="@{item.contactName}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <LinearLayout
+                        android:id="@+id/contactActionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_phone"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                        <Button
+                            android:id="@+id/btnContactPhone"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:enabled="@{item.contactPhone.length()>0}"
+                            android:gravity="center_vertical"
+                            android:padding="0dp"
+                            android:textColor="@color/colorHeadingText"
+                            tools:text="123456" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_email"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <Button
+                        android:id="@+id/btnContactEmail"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:enabled="@{item.contactEmail.length()>0}"
+                        android:gravity="center_vertical"
+                        android:padding="0dp"
+                        android:text="@{item.contactEmail}"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorHeadingText"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/caller"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.caller}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_priority"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:text="@{item.callPriority}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textIsSelectable="true"
+                        tools:text="123456" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/assignToMeBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/assign_to_me"
+                    android:visibility="@{item.canReassignChecker() ? View.VISIBLE : View.GONE}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

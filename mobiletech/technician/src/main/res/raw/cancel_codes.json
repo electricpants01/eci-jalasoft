@@ -1,0 +1,47 @@
+[
+  {
+    "Id": "09fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CancelCodeId": 1,
+    "Code": "CUSTOMER",
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CUSTOMER CANCELLED CALL",
+    "LastUpdate": "/Date(1379034538027-0500)/"
+  },
+  {
+    "Id": "14fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CancelCodeId": 2,
+    "Code": "CREDIT",
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOVACOPY AR DEPARTMENT CANCELLED CALL",
+    "LastUpdate": "/Date(1379034538027-0500)/"
+  },
+  {
+    "Id": "22fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CancelCodeId": 3,
+    "Code": "ERROR",
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ENTRY ERROR",
+    "LastUpdate": "/Date(1379034538027-0500)/"
+  },
+  {
+    "Id": "27fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CancelCodeId": 4,
+    "Code": "DUPLICATE",
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "DUPLICATE CALL",
+    "LastUpdate": "/Date(1379034538027-0500)/"
+  },
+  {
+    "Id": "29fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CancelCodeId": 5,
+    "Code": "TECHNICIAN",
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "TECHNICIAN CANCELLED CALL",
+    "LastUpdate": "/Date(1379034538027-0500)/"
+  }
+]

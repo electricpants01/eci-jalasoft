@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_repair_code"
+    app:startDestination="@id/repairCodeSearchFragment">
+
+    <fragment
+        android:id="@+id/repairCodeSearchFragment"
+        android:name="eci.technician.activities.repairCode.RepairCodeSearchFragment"
+        android:label="fragment_repair_code_search"
+        tools:layout="@layout/searchable_list_search_button" />
+</navigation>

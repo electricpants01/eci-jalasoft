@@ -1,0 +1,62 @@
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger: none
+
+pool:
+  vmImage: 'macOS-10.13'
+
+steps:
+- task: Gradle@2
+  inputs:
+    workingDirectory: './android-nc-technician'
+    gradleWrapperFile: './android-nc-technician/gradlew'
+    gradleOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: 'assembleRelease'
+- task: CopyFiles@2
+  inputs:
+   SourceFolder: $(Build.SourcesDirectory)
+   contents: '**/*.apk'
+   targetFolder: '$(build.artifactStagingDirectory)'
+   overWrite: true
+- task: PublishBuildArtifacts@1
+  inputs:
+   pathtoPublish: '$(Build.ArtifactStagingDirectory)/android-nc-technician/technician/build/outputs/apk/'
+   artifactName: 'apks'
+   publishLocation: 'container'
+
+# - task: AppCenterDistribute@3
+#   name: AppCenterPrestage
+#   displayName: AppCenter Prestage Release
+#   inputs:
+#     serverEndpoint: MSAppCenter
+#     appSlug: ecimobilesolutions-qn3q/MobileTech-TM
+#     appFile: '$(Build.ArtifactStagingDirectory)/android-nc-technician/technician/build/outputs/apk/prestageServer/release/technician-prestageServer-release.apk'
+#     distributionGroupId: 935f0140-19b6-44a9-bbd8-90d94409ef90
+#     releaseNotesInput: 'Prestage Server APK CI Release'
+# - task: AppCenterDistribute@3
+#   name: AppCenterTraining
+#   displayName: AppCenter Training Release
+#   inputs:
+#     serverEndpoint: MSAppCenter
+#     appSlug: ecimobilesolutions-qn3q/MobileTech-TM
+#     appFile: '$(Build.ArtifactStagingDirectory)/android-nc-technician/technician/build/outputs/apk/trainingServer/release/technician-trainingServer-release.apk'
+#     distributionGroupId: 935f0140-19b6-44a9-bbd8-90d94409ef90
+#     releaseNotesInput: 'Training Server APK CI Release'
+
+- task: AppCenterDistribute@3
+  name: AppCenterBeta
+  displayName: AppCenter Beta Release
+  inputs:
+    serverEndpoint: MSAppCenter
+    appSlug: ecimobilesolutions-qn3q/MobileTech-TM
+    appFile: '$(Build.ArtifactStagingDirectory)/android-nc-technician/technician/build/outputs/apk/beta/release/technician-beta-release.apk'
+    distributionGroupId: 935f0140-19b6-44a9-bbd8-90d94409ef90
+    releaseNotesInput: 'Beta APK CI Release'

@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+        <item name="buttonStyle">@style/MainButton</item>
+        <item name="buttonBarButtonStyle">@style/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimaryDark">@color/iconColor
+        </item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorCalendarBackground</item>
+    </style>
+
+    <style name="MainButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="buttonBarButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        // Set the splash screen background, animated icon, and animation duration.
+        <item name="windowSplashScreenBackground">@color/iconColor</item>
+
+        // Use windowSplashScreenAnimatedIcon to add either a drawable or an
+        // animated drawable. One of these is required.
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_circle_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>  # Required for
+        # animated icons
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/AppTheme</item>  # Required.
+    </style>
+
+
+<!--    Material Theme-->
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="materialButtonStyle">@style/MaterialButton</item>
+        <item name="buttonBarButtonStyle">@style/buttonBarButtonStyle</item>
+
+    </style>
+
+    <style name="AppBarTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorPrimary"> @color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppBarThemeSearch" parent="Theme.MaterialComponents">
+        <item name="background"> @color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+    </style>
+
+
+    <style name="searchBarAlv" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="backgroundTint">@color/colorButton</item>
+    </style>
+
+
+    
+</resources>

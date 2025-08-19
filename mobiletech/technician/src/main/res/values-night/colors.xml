@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLoginBackground">#1e1e1e</color>
+    <color name="colorLoginMainColor">#FFFFFF</color>
+    <color name="colorHeadingText">#f3afff</color>
+    <color name="colorFragmentBackground">#1e1e1e</color>
+    <color name="transparentBackground">#E61e1e1e</color>
+    <color name="colorMessage">#1e1e1e</color>
+    <color name="colorMessageText">#FFFFFF</color>
+    <color name="colorCalendarBackground">#353333</color>
+    <color name="warningRed">#ff453a</color>
+    <color name="navIconColor">#C1C0C0</color>
+    <color name="colorTitleSeparator">#535353</color>
+    <color name="disabledField">#1AFFFFFF</color>
+    <color name="listItemBackground">#303030</color>
+    <color name="cancelButtonSearchPartDialog">#00786B</color>
+    <color name="meterTextColor">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="String" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="@{item.equals(``)  ? View.GONE: View.VISIBLE }">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/emailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/rounded_button"
+                android:drawableEnd="@drawable/ic_close_24px"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                tools:text="arthurMorgan_theBoah@gmail.com" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

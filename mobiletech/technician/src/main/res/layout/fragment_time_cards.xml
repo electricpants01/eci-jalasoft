@@ -1,0 +1,307 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="technicianUser"
+            type="eci.technician.models.TechnicianUser" />
+
+        <variable
+            name="fabOpen"
+            type="boolean" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="eci.technician.fragments.TimeCardsFragment">
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:text="@{technicianUser.friendlyState}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            tools:text="Clocked In" />
+
+        <TextView
+            android:id="@+id/txtCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStatus"
+            android:layout_margin="8dp"
+            android:text="@string/days"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerShiftDays"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtCaption"
+            tools:listitem="@layout/shift" />
+
+        <FrameLayout
+            android:id="@+id/frmTransparentLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparentBackground"
+            android:visibility="@{fabOpen ? View.VISIBLE : View.GONE}" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canBrakeOut() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewBreakout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/brake_out"
+                            android:id="@+id/textViewBrakeOut"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnBrakeOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/brake"
+                        app:backgroundTint="@color/colorBrakeOut"
+                        app:elevation="4dp"
+                        app:fabSize="mini" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canBrakeIn() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewBreakIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/brake_in"
+                            android:id="@+id/textViewBrakeIn"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnBrakeIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:backgroundTint="@color/colorBrakeIn"
+                        app:elevation="4dp"
+                        app:fabSize="mini"
+                        app:srcCompat="@drawable/brake" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canLunchOut() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewLunchOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/lunch_out"
+                            android:id="@+id/textViewLunchOut"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnLunchOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/lunch"
+                        app:backgroundTint="@color/colorLunchOut"
+                        app:elevation="4dp"
+                        app:fabSize="mini" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canLunchIn() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewLunchIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/lunch_in"
+                            android:id="@+id/textViewLunchIn"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnLunchIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/lunch"
+                        app:backgroundTint="@color/colorLunchIn"
+                        app:elevation="4dp"
+                        app:fabSize="mini" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canClockOut() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewClockOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/clock_out"
+                            android:id="@+id/textViewClockOut"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnClockOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/clock"
+                        app:backgroundTint="@color/colorClockOut"
+                        app:elevation="4dp"
+                        app:fabSize="mini" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="@{technicianUser.canClockIn() ? View.VISIBLE : View.GONE}">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewClockIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        app:elevation="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="@string/clock_in"
+                            android:id="@+id/textViewClockIn"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnClockIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/fab_mini_margin"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/clock"
+                        app:backgroundTint="@color/colorClockIn"
+                        app:elevation="4dp"
+                        app:fabSize="mini" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:clickable="true"
+                app:srcCompat="@drawable/plus"
+                app:elevation="4dp"
+                app:fabSize="normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,38 @@
+# Android
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+
+trigger: none
+
+pool:
+  vmImage: 'macos-latest'
+
+steps:
+  - task: SonarCloudPrepare@1
+    inputs:
+      SonarCloud: 'SonarCloud analysis'
+      organization: 'eci-software-solutions'
+      scannerMode: 'Other'
+      extraProperties: |
+        # Additional properties that will be passed to the scanner,
+        # Put one key=value per line, example:
+        sonar.projectKey=eci.technician
+        sonar.projectName='MobileTech Android'
+        sonar.exclusions=./signalr, ./signalr-client-sdk, ./signalr-client-sdk-android
+  - task: Gradle@2
+    inputs:
+      workingDirectory: ''
+      gradleWrapperFile: 'gradlew'
+      gradleOptions: '-Xmx3072m'
+      jdkVersionOption: '1.8'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: '**/TEST-*.xml'
+      tasks: 'assembleBetaDebug'
+      sonarQubeRunAnalysis: true
+      sqGradlePluginVersionChoice: 'specify'
+      sonarQubeGradlePluginVersion: '2.6.1'
+  - task: SonarCloudPublish@1
+    inputs:
+      pollingTimeoutSec: '300'

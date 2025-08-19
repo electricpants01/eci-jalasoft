@@ -1,0 +1,61 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="eci.technician.models.order.TechnicianWarehousePart" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/partContainerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.item}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Item name" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.description}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/warehouseNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.warehouse}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="AlvaroWH" />
+
+        <TextView
+            android:id="@+id/availableField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:visibility="visible"
+            tools:text="Available: 10" />
+
+        <TextView
+            android:id="@+id/defaultPriceField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Default Price: 100.00" />
+
+    </LinearLayout>
+</layout>

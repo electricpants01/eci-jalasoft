@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_my_warehouse"
+    app:startDestination="@id/newMyWarehouseFragment">
+
+    <fragment
+        android:id="@+id/newMyWarehouseFragment"
+        android:name="eci.technician.activities.mywarehouse.NewMyWarehouseFragment"
+        android:label="@string/my_warehouse"
+        tools:layout="@layout/searchable_list" />
+</navigation>

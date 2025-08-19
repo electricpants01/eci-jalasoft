@@ -1,0 +1,434 @@
+[
+  {
+    "Id": "0afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT WORKING, FEEDING PROBLEMS",
+    "LastUpdate": "/Date(1379167433837-0500)/",
+    "ProblemCodeId": 1,
+    "ProblemCodeName": "ADF"
+  },
+  {
+    "Id": "0dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INITIAL INSTALL ON CUSTOMER'S NETWORK",
+    "LastUpdate": "/Date(1379167453970-0500)/",
+    "ProblemCodeId": 2,
+    "ProblemCodeName": "CONNECTIVITY"
+  },
+  {
+    "Id": "0ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CONSUMABLE NEEDS REPLACEMENT INDICATED",
+    "LastUpdate": "/Date(1379167476890-0500)/",
+    "ProblemCodeId": 3,
+    "ProblemCodeName": "CONSUMABLE"
+  },
+  {
+    "Id": "11fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "EQUIPMENT IS DEAD",
+    "LastUpdate": "/Date(1379167488183-0500)/",
+    "ProblemCodeId": 4,
+    "ProblemCodeName": "DEAD"
+  },
+  {
+    "Id": "15fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEMS SENDING EMAIL",
+    "LastUpdate": "/Date(1379167501917-0500)/",
+    "ProblemCodeId": 5,
+    "ProblemCodeName": "EMAIL"
+  },
+  {
+    "Id": "18fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ERROR CODE DISPLAYED",
+    "LastUpdate": "/Date(1379167514763-0500)/",
+    "ProblemCodeId": 6,
+    "ProblemCodeName": "ERROR CODE"
+  },
+  {
+    "Id": "1bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "WILL NOT FAX",
+    "LastUpdate": "/Date(1379167523923-0500)/",
+    "ProblemCodeId": 7,
+    "ProblemCodeName": "FAX"
+  },
+  {
+    "Id": "1efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT WORKING, JAMMING, STAPLING, PUNCHING, FEEDING",
+    "LastUpdate": "/Date(1379167546913-0500)/",
+    "ProblemCodeId": 8,
+    "ProblemCodeName": "FINISHER"
+  },
+  {
+    "Id": "21fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ANY TYPE OF IMAGE PROBLEM COPIES OR PRINTING",
+    "LastUpdate": "/Date(1379167581997-0500)/",
+    "ProblemCodeId": 9,
+    "ProblemCodeName": "IMAGE QUALITY"
+  },
+  {
+    "Id": "23fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INTALL OR REMOVE OPTIONS OR ACCESSORIES",
+    "LastUpdate": "/Date(1379167606227-0500)/",
+    "ProblemCodeId": 10,
+    "ProblemCodeName": "INSTALL-REMOVE"
+  },
+  {
+    "Id": "2cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COPY PAPER JAMMING IN COPIER",
+    "LastUpdate": "/Date(1379167626997-0500)/",
+    "ProblemCodeId": 11,
+    "ProblemCodeName": "JAMMING"
+  },
+  {
+    "Id": "2efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSPECT MACHINE FOR CONTRACT",
+    "LastUpdate": "/Date(1379167709580-0500)/",
+    "ProblemCodeId": 12,
+    "ProblemCodeName": "MA INSPECTION"
+  },
+  {
+    "Id": "30fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PM INDICATOR IS LIT",
+    "LastUpdate": "/Date(1379167735597-0500)/",
+    "ProblemCodeId": 13,
+    "ProblemCodeName": "MAINTENANCE"
+  },
+  {
+    "Id": "34fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CONNECTIVITY PROBLEM AFTER INSTALLATION",
+    "LastUpdate": "/Date(1379167758007-0500)/",
+    "ProblemCodeId": 14,
+    "ProblemCodeName": "NETWORK"
+  },
+  {
+    "Id": "3afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MAKING A NOISE",
+    "LastUpdate": "/Date(1379167769910-0500)/",
+    "ProblemCodeId": 15,
+    "ProblemCodeName": "NOISE"
+  },
+  {
+    "Id": "3efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NO CODE FOR PROBLEM BEING REPORTED",
+    "LastUpdate": "/Date(1379167781133-0500)/",
+    "ProblemCodeId": 16,
+    "ProblemCodeName": "OTHER"
+  },
+  {
+    "Id": "43fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CUSTOMER REPORTING BROKEN PART",
+    "LastUpdate": "/Date(1379167797757-0500)/",
+    "ProblemCodeId": 17,
+    "ProblemCodeName": "PART"
+  },
+  {
+    "Id": "4afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CAN NOT PRINT FROM COMPUTER",
+    "LastUpdate": "/Date(1379167819507-0500)/",
+    "ProblemCodeId": 18,
+    "ProblemCodeName": "PRINTING"
+  },
+  {
+    "Id": "4efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MACHINE RELOCATION",
+    "LastUpdate": "/Date(1379167840323-0500)/",
+    "ProblemCodeId": 19,
+    "ProblemCodeName": "RELOCATE"
+  },
+  {
+    "Id": "52fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEMS SCANNING",
+    "LastUpdate": "/Date(1379167852773-0500)/",
+    "ProblemCodeId": 20,
+    "ProblemCodeName": "SCANNING"
+  },
+  {
+    "Id": "54fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COPY PAPER SKEWING IN COPIER",
+    "LastUpdate": "/Date(1379167866463-0500)/",
+    "ProblemCodeId": 21,
+    "ProblemCodeName": "SKEWING"
+  },
+  {
+    "Id": "57fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SOFTWARE/APP PROBLEM-SLOW,FREEZING,REBOOTING",
+    "LastUpdate": "/Date(1456601068173-0600)/",
+    "ProblemCodeId": 22,
+    "ProblemCodeName": "SOFTWARE"
+  },
+  {
+    "Id": "5afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "DELIVER SUPPLIES OR PROBLEM WITH SUPPLIES",
+    "LastUpdate": "/Date(1379167896177-0500)/",
+    "ProblemCodeId": 23,
+    "ProblemCodeName": "SUPPLY"
+  },
+  {
+    "Id": "5cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NEEDS TOTAL CALL-CLEANING",
+    "LastUpdate": "/Date(1379167917263-0500)/",
+    "ProblemCodeId": 24,
+    "ProblemCodeName": "TOTAL CALL"
+  },
+  {
+    "Id": "5ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COPY PAPER IS WRINKLING IN COPIER",
+    "LastUpdate": "/Date(1379167938657-0500)/",
+    "ProblemCodeId": 25,
+    "ProblemCodeName": "WRINKLING"
+  },
+  {
+    "Id": "61fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MACHINE IS OVER HEATING",
+    "LastUpdate": "/Date(1379167950087-0500)/",
+    "ProblemCodeId": 26,
+    "ProblemCodeName": "HEAT"
+  },
+  {
+    "Id": "65fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COPY PAPER IS CURLING",
+    "LastUpdate": "/Date(1379184060190-0500)/",
+    "ProblemCodeId": 27,
+    "ProblemCodeName": "CURLING"
+  },
+  {
+    "Id": "67fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CUSTOMER REQUESTED TRAINING",
+    "LastUpdate": "/Date(1379186714937-0500)/",
+    "ProblemCodeId": 28,
+    "ProblemCodeName": "TRAINING"
+  },
+  {
+    "Id": "68fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "AUTOMATED METER NOT REPORTING",
+    "LastUpdate": "/Date(1409239566580-0500)/",
+    "ProblemCodeId": 29,
+    "ProblemCodeName": "METER"
+  },
+  {
+    "Id": "6afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NEED TO RELOCATE AN INSTALLED COMPUTER",
+    "LastUpdate": "/Date(1455230890577-0600)/",
+    "ProblemCodeId": 30,
+    "ProblemCodeName": "FTB-RELOCATE"
+  },
+  {
+    "Id": "6cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PICKUP EQUIPMENT FOR DELIVERY TO CACHE",
+    "LastUpdate": "/Date(1455143465507-0600)/",
+    "ProblemCodeId": 31,
+    "ProblemCodeName": "FTB-PICKUP"
+  },
+  {
+    "Id": "6ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "EQUIPMENT IS DEAD",
+    "LastUpdate": "/Date(1455143521723-0600)/",
+    "ProblemCodeId": 32,
+    "ProblemCodeName": "FTB-DEAD"
+  },
+  {
+    "Id": "70fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEM WITH BATTERY OR CHARGER",
+    "LastUpdate": "/Date(1455294764013-0600)/",
+    "ProblemCodeId": 33,
+    "ProblemCodeName": "FTB-BATTERY"
+  },
+  {
+    "Id": "72fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEM WITH DISPLAY",
+    "LastUpdate": "/Date(1515274883287-0600)/",
+    "ProblemCodeId": 34,
+    "ProblemCodeName": "FTB-DISPLAY"
+  },
+  {
+    "Id": "75fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEM WITH KEYBOARD, MOUSE OR DOCKING UNIT",
+    "LastUpdate": "/Date(1455294801483-0600)/",
+    "ProblemCodeId": 35,
+    "ProblemCodeName": "FTB-PERIPHERAL"
+  },
+  {
+    "Id": "77fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SERVER REFRESH",
+    "LastUpdate": "/Date(1455143631470-0600)/",
+    "ProblemCodeId": 36,
+    "ProblemCodeName": "FTB-SERVER"
+  },
+  {
+    "Id": "79fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REQUEST TO PICKUP COMPUTER FROM CACHE AND REPLACE",
+    "LastUpdate": "/Date(1455294833373-0600)/",
+    "ProblemCodeId": 37,
+    "ProblemCodeName": "FTB-TACREPLACE"
+  },
+  {
+    "Id": "7bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REQUEST TO PERFORM SERVICES FOR CACHE",
+    "LastUpdate": "/Date(1455143706193-0600)/",
+    "ProblemCodeId": 38,
+    "ProblemCodeName": "FTB-CACHE"
+  },
+  {
+    "Id": "7dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEM CODE NOT DEFINED",
+    "LastUpdate": "/Date(1455143728510-0600)/",
+    "ProblemCodeId": 39,
+    "ProblemCodeName": "FTB-OTHER"
+  },
+  {
+    "Id": "7efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ERROR CODE DISPLAYED / BOOTING ISSUES",
+    "LastUpdate": "/Date(1456601013270-0600)/",
+    "ProblemCodeId": 40,
+    "ProblemCodeName": "FTB-ERROR CODE"
+  },
+  {
+    "Id": "80fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SOFTWARE PROBLEM",
+    "LastUpdate": "/Date(1455230717400-0600)/",
+    "ProblemCodeId": 41,
+    "ProblemCodeName": "FTB-SOFTWARE"
+  },
+  {
+    "Id": "82fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CONNECTIVITY PROBLEM AFTER INSTALLATION",
+    "LastUpdate": "/Date(1455230789477-0600)/",
+    "ProblemCodeId": 42,
+    "ProblemCodeName": "FTB-NETWORK"
+  },
+  {
+    "Id": "84fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MAKING A NOISE",
+    "LastUpdate": "/Date(1455230811560-0600)/",
+    "ProblemCodeId": 43,
+    "ProblemCodeName": "FTB-NOISE"
+  },
+  {
+    "Id": "87fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REQUEST TO INSTALL A COMPUTER",
+    "LastUpdate": "/Date(1455230933750-0600)/",
+    "ProblemCodeId": 44,
+    "ProblemCodeName": "FTB-INSTALL"
+  },
+  {
+    "Id": "89fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NEED ASSISTANCE WITH LAN MIGRATION",
+    "LastUpdate": "/Date(1456854019147-0600)/",
+    "ProblemCodeId": 45,
+    "ProblemCodeName": "FTB-LAN MIGRATE"
+  },
+  {
+    "Id": "8bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INHOUSE NEW SETUP OF EQUIPMENT",
+    "LastUpdate": "/Date(1460642102850-0500)/",
+    "ProblemCodeId": 46,
+    "ProblemCodeName": "SETUP"
+  },
+  {
+    "Id": "8dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK",
+    "LastUpdate": "/Date(1471369699700-0500)/",
+    "ProblemCodeId": 47,
+    "ProblemCodeName": "SHOP"
+  },
+  {
+    "Id": "8ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "DELIVERY OR PICKUP OF EQUIPMENT",
+    "LastUpdate": "/Date(1474560368607-0500)/",
+    "ProblemCodeId": 48,
+    "ProblemCodeName": "DELIVERY-PICKUP"
+  }
+]

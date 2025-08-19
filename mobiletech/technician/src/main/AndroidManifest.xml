@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="eci.technician">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="geo" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.TimeCardsCalendarActivity"
+            android:exported="false" />
+        <activity android:name=".activities.transfers.TransfersActivity" />
+        <activity android:name=".activities.allparts.PartsManagerActivity" />
+        <activity
+            android:name=".activities.notes.NotesActivity"
+            android:configChanges="orientation" />
+        <activity android:name=".activities.LocationPermissionActivity" />
+        <activity
+            android:name=".activities.CreateCallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".activities.GroupCallDetailsActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.serviceOrderFilter.FilterServiceOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/filter_service_calls" />
+        <activity
+            android:name=".activities.OrderDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/order_details" />
+        <activity android:name=".activities.MapSettingsActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".activities.SettingsActivity" />
+        <activity
+            android:name=".activities.MapsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activities.CompletedCallsDetailActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.NewCancelActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.CancelCodesActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.SyncActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.SourceActivity"
+            android:label="@string/source_licenses" />
+        <activity android:name=".activities.SourceDetailActivity" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/help_title" />
+        <activity
+            android:name=".activities.NewPartRequestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/new_transfer_request" />
+        <activity
+            android:name=".activities.fieldTransfer.FieldTransferActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/field_transfer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activities.attachment.AttachmentsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/attachments" />
+        <activity
+            android:name=".activities.mywarehouse.NewMyWarehouseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/my_warehouse" />
+        <activity
+            android:name=".activities.NeededPartsActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.problemCodes.ProblemCodesSearchActivity"
+            android:label="@string/problem_codes" />
+        <activity
+            android:name=".activities.ReassignMissingPartsActivity"
+            android:label="@string/reassignCall" />
+        <activity
+            android:name=".activities.repairCode.RepairCodeSearchActivity"
+            android:label="@string/repair_codes" />
+        <activity android:name=".activities.UserActivity" />
+        <activity
+            android:name=".activities.MessengerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".activities.ShiftDetailsActivity" />
+        <activity
+            android:name=".activities.TechniciansActivity"
+            android:label="@string/technicians" />
+        <activity
+            android:name=".activities.EquipmentHistoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/equipment_history" />
+        <activity
+            android:name=".activities.requestNeededParts.PartsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.searchWarehouses.SearchWarehousesPartsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.addParts.AddPartsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.PartListActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name=".activities.OnHoldActivity"
+            android:label="@string/hold"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".activities.PartUseActivity"
+            android:configChanges="orientation"
+            android:label="@string/add_part"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".activities.GroupCallsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/group_calls" />
+        <activity
+            android:name=".activities.CompleteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/complete"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.AddAssistantActivity"
+            android:label="@string/add_assistant" />
+        <activity
+            android:name=".activities.CompletedCallsActivity"
+            android:configChanges="orientation"
+            android:label="@string/completed" />
+        <activity
+            android:name=".activities.ViewAssistantsActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_view_assistants" />
+        <activity
+            android:name=".activities.RequestPartsActivity"
+            android:configChanges="orientation"
+            android:label="@string/request_parts" />
+
+        <provider
+            android:name=".helpers.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="eci.technician.internal.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".service.ChatService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/service_chat" />
+        <service
+            android:name=".service.TrackService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/service_tracking" />
+        <service
+            android:name=".service.TechnicianService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/service_label" />
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".broadcast.ShareBroadCastReceiver"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_new_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorMessageText" />
+    </application>
+
+</manifest>

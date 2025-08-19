@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M18,3L18,6L2,6L2,8L18,8L18,11L22,7L18,3zM6,13L2,17L6,21L6,18L22,18L22,16L6,16L6,13z"
+      android:fillColor="@color/navIconColor"/>
+</vector>

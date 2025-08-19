@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="transferViewModel"
+            type="eci.technician.activities.transfers.TransferViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:fitsSystemWindows="true"
+        tools:context=".activities.transfers.TransferFragment">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnTransfer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:divider="@drawable/linear_divider"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/sourceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/source"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorHeadingText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/separator1"
+                    layout="@layout/view_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sourceTitle" />
+
+                <include
+                    android:id="@+id/sourceWarehouse"
+                    layout="@layout/selectable_item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardContent="@{transferViewModel.sourceSelectWarehouse.warehouse}"
+                    app:cardTitle="@{@string/warehouse}"
+                    app:isEnabled="@{true}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/separator1" />
+
+                <include
+                    android:id="@+id/sourcePart"
+                    layout="@layout/selectable_item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardContent="@{transferViewModel.sourceSelectedPart.item}"
+                    app:cardTitle="@{@string/part}"
+                    app:isEnabled="@{transferViewModel.sourceSelectWarehouse != null}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sourceWarehouse" />
+
+                <include
+                    android:id="@+id/sourceBin"
+                    layout="@layout/selectable_item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardContent="@{transferViewModel.sourceSelectBin.bin}"
+                    app:cardTitle="@{@string/bin}"
+                    app:isEnabled="@{transferViewModel.sourceSelectedPart != null}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sourcePart" />
+
+                <include
+                    android:id="@+id/sourceQuantity"
+                    layout="@layout/selectable_quantity_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:availableQuantity="@{transferViewModel.formattedAvailableQuantity}"
+                    app:serialNumber="@{transferViewModel.sourceSelectBin.serialNumber}"
+                    app:usedQuantity="@{transferViewModel.formattedUsedQuantity}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sourceBin" />
+
+                <TextView
+                    android:id="@+id/txtDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/destination"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorHeadingText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sourceQuantity" />
+
+
+                <include
+                    android:id="@+id/separator2"
+                    layout="@layout/view_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDestination" />
+
+                <include
+                    android:id="@+id/destinationWarehouse"
+                    layout="@layout/selectable_item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:cardContent="@{transferViewModel.destinationSelectedWarehouse.warehouse}"
+                    app:cardTitle="@{@string/warehouse}"
+                    app:isEnabled="@{true}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/separator2" />
+
+                <include
+                    android:id="@+id/destinationBin"
+                    layout="@layout/selectable_item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardContent="@{transferViewModel.destinationSelectedBin.bin}"
+                    app:cardTitle="@{@string/bin}"
+                    app:isEnabled="@{transferViewModel.destinationSelectedWarehouse != null}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/destinationWarehouse" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/progressBarContainer"
+            layout="@layout/progress_bar_view"
+            tools:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:enabled="false"
+            android:lines="1"
+            android:text="@string/transfer"
+            android:textColor="@color/text_color"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

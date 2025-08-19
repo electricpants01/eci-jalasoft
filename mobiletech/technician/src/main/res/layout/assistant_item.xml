@@ -1,0 +1,35 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="item"
+            type="eci.technician.models.TechnicianItem" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTechnicianName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.fullName}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Carlos Griffin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTechnicianCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.code}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="MEMSV40" />
+
+    </LinearLayout>
+</layout>

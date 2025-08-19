@@ -1,0 +1,578 @@
+[
+  {
+    "Id": "06fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT COMPLETE-CAN NOT GET ACCESS TO EQUIP-RESCEHDUL",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 31,
+    "RepairCodeName": "NO ACCESS"
+  },
+  {
+    "Id": "0cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT COMPLETE-CHARGE CALL WAITING ON APPROVAL",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 32,
+    "RepairCodeName": "NEED APPROVAL"
+  },
+  {
+    "Id": "0efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT COMPLETE-TECH NEEDS ASSISTANCE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 33,
+    "RepairCodeName": "NEED ASSISTANCE"
+  },
+  {
+    "Id": "10fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COLOR CALIBRATION",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 34,
+    "RepairCodeName": "CALIBRATATION"
+  },
+  {
+    "Id": "12fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "GENERAL CLEANING",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 35,
+    "RepairCodeName": "CLEAN"
+  },
+  {
+    "Id": "16fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CONSUMABLE OR MAINT ITEM  REPLACED OFF SCHEDULE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 36,
+    "RepairCodeName": "CONSUMABLE"
+  },
+  {
+    "Id": "19fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REQUEST TO DELIVER ITEM-NO PROB WITH EQUIP",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 37,
+    "RepairCodeName": "DELIVERY"
+  },
+  {
+    "Id": "1cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ASSISTED SALES REP WITH DEMO",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 38,
+    "RepairCodeName": "ASSIST W/DEMO"
+  },
+  {
+    "Id": "1dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ELECT PART REPLACED-WIRING-CONNECTOR PROB",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 39,
+    "RepairCodeName": "ELECTRICAL"
+  },
+  {
+    "Id": "20fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "HELPDESK ONLY-EMAILED SOLUTION TO CUSTOMER",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 40,
+    "RepairCodeName": "EMAIL"
+  },
+  {
+    "Id": "24fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ENVIR PROBLEM-OUTLET-SPACING-HUMIDITY-VENTILATION",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 41,
+    "RepairCodeName": "ENVIRONMENT"
+  },
+  {
+    "Id": "2bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "UPGRADED FIRMWARE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 42,
+    "RepairCodeName": "FIRMWARE"
+  },
+  {
+    "Id": "2dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "HELPDESK ONLY-USE GO-TO-ASSIST TO RESOLVE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 43,
+    "RepairCodeName": "GO-TO-ASSIST"
+  },
+  {
+    "Id": "31fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSPECT MACHINE FOR SERVICE CONTRACT",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 44,
+    "RepairCodeName": "INSPECTION"
+  },
+  {
+    "Id": "35fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALL ACCESSORY OR OPTION FROM A DEAL FILE",
+    "LastUpdate": "/Date(1474560142897-0500)/",
+    "RepairCodeId": 45,
+    "RepairCodeName": "OPTION INSTALL"
+  },
+  {
+    "Id": "38fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MECH PART REPLACED-MECH ADJ-CLEAN MECH PART",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 46,
+    "RepairCodeName": "MECHANICAL"
+  },
+  {
+    "Id": "39fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALLED FACTORY MODIFCATION",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 47,
+    "RepairCodeName": "MODIFICATION"
+  },
+  {
+    "Id": "3cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "RELOCATED AND REINSTALLED EQUIPMENT",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 48,
+    "RepairCodeName": "RELOCATION"
+  },
+  {
+    "Id": "40fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT COMPLETE-ORDERED PARTS",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 49,
+    "RepairCodeName": "NEED PART"
+  },
+  {
+    "Id": "42fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NETWORK OR SOFTWARE CHANGE-CABLING",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 50,
+    "RepairCodeName": "NETWORK"
+  },
+  {
+    "Id": "45fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "COULD NOT REPRODUCE PROBLEM",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 51,
+    "RepairCodeName": "NO PROB FOUND"
+  },
+  {
+    "Id": "48fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "TRAINED CUSTOMER",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 52,
+    "RepairCodeName": "TRAINING"
+  },
+  {
+    "Id": "49fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIR CODE NOT FOUND",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 53,
+    "RepairCodeName": "OTHER"
+  },
+  {
+    "Id": "4dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CORRECTED PROBLEM OVER THE PHONE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 54,
+    "RepairCodeName": "PHONE"
+  },
+  {
+    "Id": "51fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PREVENTATIVE MAINTENANCE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 55,
+    "RepairCodeName": "PM"
+  },
+  {
+    "Id": "55fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "IN-HOUSE USE ONLY, REFURBISHED EQUIPMENT",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 56,
+    "RepairCodeName": "REFURB"
+  },
+  {
+    "Id": "58fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REMOVAL OF ACCESSORY OR OPTION FROM A DEAL FILE",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 57,
+    "RepairCodeName": "REMOVAL"
+  },
+  {
+    "Id": "5bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PROBLEM CAUSED BY DEFECTIVE SUPPLY ITEM",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 58,
+    "RepairCodeName": "SUPPLY"
+  },
+  {
+    "Id": "5efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NOT COMPLETE-RAN OUT OF TIME",
+    "LastUpdate": "/Date(1379035621590-0500)/",
+    "RepairCodeId": 59,
+    "RepairCodeName": "OUT OF TIME"
+  },
+  {
+    "Id": "63fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INCOMPLETED CALL-ORDERED PARTS",
+    "LastUpdate": "/Date(1379184172050-0500)/",
+    "RepairCodeId": 60,
+    "RepairCodeName": "ORDER PARTS"
+  },
+  {
+    "Id": "64fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALLED OR CORRECTED VCARE PROBLEM",
+    "LastUpdate": "/Date(1409239665523-0500)/",
+    "RepairCodeId": 61,
+    "RepairCodeName": "VCARE"
+  },
+  {
+    "Id": "66fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALLED OR CORRECTED TCN PROBLEM",
+    "LastUpdate": "/Date(1409239698457-0500)/",
+    "RepairCodeId": 62,
+    "RepairCodeName": "TCN"
+  },
+  {
+    "Id": "69fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALL OR CORRECT PRINTFLEET PROBLEM",
+    "LastUpdate": "/Date(1409239871697-0500)/",
+    "RepairCodeId": 63,
+    "RepairCodeName": "PRINTFLEET"
+  },
+  {
+    "Id": "6bfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REIMAGE FTB DRIVE",
+    "LastUpdate": "/Date(1455141889393-0600)/",
+    "RepairCodeId": 64,
+    "RepairCodeName": "FTB-IMAGE"
+  },
+  {
+    "Id": "6dfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPLACED HDD-SSD-MEMORY",
+    "LastUpdate": "/Date(1455141945740-0600)/",
+    "RepairCodeId": 65,
+    "RepairCodeName": "FTB-DISK DRIVE"
+  },
+  {
+    "Id": "6efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "OPEN SERVICE TICKET WITH MANUFACTURER",
+    "LastUpdate": "/Date(1459966488243-0500)/",
+    "RepairCodeId": 66,
+    "RepairCodeName": "TICKET"
+  },
+  {
+    "Id": "71fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "RELOCATED AN INSTALLED COMPUTER",
+    "LastUpdate": "/Date(1455230976187-0600)/",
+    "RepairCodeId": 67,
+    "RepairCodeName": "FTB-RELOCATE"
+  },
+  {
+    "Id": "73fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "EQUIP PICK UP FOR CACHE",
+    "LastUpdate": "/Date(1455142252523-0600)/",
+    "RepairCodeId": 68,
+    "RepairCodeName": "FTB-PICKUP"
+  },
+  {
+    "Id": "74fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPLACE MAIN BOARD OR CPU",
+    "LastUpdate": "/Date(1455142298317-0600)/",
+    "RepairCodeId": 69,
+    "RepairCodeName": "FTB-CPU"
+  },
+  {
+    "Id": "76fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIRED OR REPLACED DISPLAY",
+    "LastUpdate": "/Date(1455294909480-0600)/",
+    "RepairCodeId": 70,
+    "RepairCodeName": "FTB-DISPAY"
+  },
+  {
+    "Id": "78fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIRED/REPLACED KEYBOARD, MOUSE, DOCKING STATION",
+    "LastUpdate": "/Date(1455295041700-0600)/",
+    "RepairCodeId": 71,
+    "RepairCodeName": "FTB-PERIPHERAL"
+  },
+  {
+    "Id": "7afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIRED OR REPLACED BATTERY",
+    "LastUpdate": "/Date(1455294890507-0600)/",
+    "RepairCodeId": 72,
+    "RepairCodeName": "FTB-BATTERY"
+  },
+  {
+    "Id": "7cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SERVER REFRESH",
+    "LastUpdate": "/Date(1455142429103-0600)/",
+    "RepairCodeId": 73,
+    "RepairCodeName": "FTB-SERVER"
+  },
+  {
+    "Id": "7ffe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "CLEANED",
+    "LastUpdate": "/Date(1455142461923-0600)/",
+    "RepairCodeId": 74,
+    "RepairCodeName": "FTB-CLEAN"
+  },
+  {
+    "Id": "81fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPLACED PATCH CABLE",
+    "LastUpdate": "/Date(1455142477813-0600)/",
+    "RepairCodeId": 75,
+    "RepairCodeName": "FTB-CABLE"
+  },
+  {
+    "Id": "83fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIRED/REPLACED MISC PART (FAN, CONNECTOR,COVER)",
+    "LastUpdate": "/Date(1455294963987-0600)/",
+    "RepairCodeId": 76,
+    "RepairCodeName": "FTB-MISC PART"
+  },
+  {
+    "Id": "85fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "NO PROBLEM FOUND",
+    "LastUpdate": "/Date(1455142529790-0600)/",
+    "RepairCodeId": 77,
+    "RepairCodeName": "FTB-NPF"
+  },
+  {
+    "Id": "86fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MISC CACHE LABOR (BENCH WORK)",
+    "LastUpdate": "/Date(1455142556277-0600)/",
+    "RepairCodeId": 78,
+    "RepairCodeName": "FTB-CACHE"
+  },
+  {
+    "Id": "88fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPLACED PER INSTRUCTIONS FROM TAC ON INITIAL CALL",
+    "LastUpdate": "/Date(1455142613713-0600)/",
+    "RepairCodeId": 79,
+    "RepairCodeName": "FTB-TACREPLACE"
+  },
+  {
+    "Id": "8afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPLACED AFTER ONSITE DIAGNOSTICS (NEED 2ND CODE)",
+    "LastUpdate": "/Date(1455142707027-0600)/",
+    "RepairCodeId": 80,
+    "RepairCodeName": "FTB-REPLACED"
+  },
+  {
+    "Id": "8cfe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIR NOT DEFINED",
+    "LastUpdate": "/Date(1455142774000-0600)/",
+    "RepairCodeId": 81,
+    "RepairCodeName": "FTB-OTHER"
+  },
+  {
+    "Id": "8efe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "INSTALLED A COMPUTER",
+    "LastUpdate": "/Date(1455230997970-0600)/",
+    "RepairCodeId": 82,
+    "RepairCodeName": "FTB-INSTALL"
+  },
+  {
+    "Id": "90fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "UNABLE TO ACCESS COMPUTER OR FINISH REPAIRS",
+    "LastUpdate": "/Date(1456603601207-0600)/",
+    "RepairCodeId": 83,
+    "RepairCodeName": "FTB-RESCHEDULED"
+  },
+  {
+    "Id": "91fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "ASSISTED IN LAN MIGRATION",
+    "LastUpdate": "/Date(1456853970930-0600)/",
+    "RepairCodeId": 84,
+    "RepairCodeName": "FTB-LAN MIGRATE"
+  },
+  {
+    "Id": "92fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "MACHINE SETTING/PARAMETER CHANGED",
+    "LastUpdate": "/Date(1458938478290-0500)/",
+    "RepairCodeId": 85,
+    "RepairCodeName": "SETTING CHG"
+  },
+  {
+    "Id": "93fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "FOREIGN OBJECT(PAPER CLIP, STAPLE, PAPER REMNANT)",
+    "LastUpdate": "/Date(1459536993890-0500)/",
+    "RepairCodeId": 86,
+    "RepairCodeName": "DEBRIS"
+  },
+  {
+    "Id": "94fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK PARTING OUT RECYCLED MACHINE",
+    "LastUpdate": "/Date(1471374542187-0500)/",
+    "RepairCodeId": 87,
+    "RepairCodeName": "SHOP-RECYCLE"
+  },
+  {
+    "Id": "95fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK SETTING UP NEW MACHINE",
+    "LastUpdate": "/Date(1471374570180-0500)/",
+    "RepairCodeId": 88,
+    "RepairCodeName": "SHOP-SETUP"
+  },
+  {
+    "Id": "96fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK REFURBISHING USED MACHINE",
+    "LastUpdate": "/Date(1471374607060-0500)/",
+    "RepairCodeId": 89,
+    "RepairCodeName": "SHOP-REFURB"
+  },
+  {
+    "Id": "97fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK REPAIRING CUSTOMER OWNED MACHINE",
+    "LastUpdate": "/Date(1471374666933-0500)/",
+    "RepairCodeId": 90,
+    "RepairCodeName": "SHOP-REPAIR"
+  },
+  {
+    "Id": "98fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "SHOP WORK SERVICING OUT OF BOX EQUIPMENT",
+    "LastUpdate": "/Date(1471464071530-0500)/",
+    "RepairCodeId": 91,
+    "RepairCodeName": "SHOP-SERVICE"
+  },
+  {
+    "Id": "99fe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "DELIVERY AND INSTALLATION OF MACHINE",
+    "LastUpdate": "/Date(1474560202720-0500)/",
+    "RepairCodeId": 92,
+    "RepairCodeName": "MACHINE INSTALL"
+  },
+  {
+    "Id": "9afe4990-03dd-e711-80e2-00155d014830",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "PICKUP MACHINE, BROUGHT INTO SHOP",
+    "LastUpdate": "/Date(1474560241423-0500)/",
+    "RepairCodeId": 93,
+    "RepairCodeName": "MACHINE PICKUP"
+  },
+  {
+    "Id": "e980c8fc-2af3-e711-80e5-00155d01f50e",
+    "Active": true,
+    "CompanyId": "b143d6dc-3dec-e511-b041-8c89a5feb541",
+    "Description": "REPAIRED OR REPLACED DISPLAY",
+    "LastUpdate": "/Date(1515274895720-0600)/",
+    "RepairCodeId": 70,
+    "RepairCodeName": "FTB-DISPLAY"
+  }
+]

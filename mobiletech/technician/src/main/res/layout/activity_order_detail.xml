@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="eci.technician.models.order.ServiceOrder" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshServiceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="eci.technician.activities.OrderDetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="eci.technician.activities.OrderDetailActivity">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:titleTextAppearance="@style/ToolbarTitle" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <include
+                android:id="@+id/containerOffline"
+                layout="@layout/offline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackground"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:text="@{item.customerName}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:textColor="@color/colorHeadingText"
+                                android:textStyle="bold"
+                                tools:text="Name" />
+
+                            <include layout="@layout/view_separator" />
+
+                            <include
+                                android:id="@+id/partsCountButton"
+                                layout="@layout/parts_button_count_layout" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date_received"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@{item.header}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <LinearLayout
+                                android:id="@+id/primaryTechNameContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="@{item.canShowPrimaryTechName() ? View.VISIBLE : View.GONE}"
+                                tools:visibility="visible">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/primary_technician"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:lines="1"
+                                    android:text="@{item.primaryTechName}"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    tools:text="Bart Simpson" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dispatch_time"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedDispatchTime}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/arrive_time"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedArriveTime}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/schedule_time"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedScheduleTime}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/call_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="@{item.callNumber_Code}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textIsSelectable="true"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/po_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:text="@{item.poNumber}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/call_type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.callType}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/customer_address"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <Button
+                                android:id="@+id/btnCustomerAddress"
+                                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{!item.customerFullAddress.empty}"
+                                android:gravity="center_vertical"
+                                android:padding="0dp"
+                                android:text="@{item.customerFullAddress}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/colorHeadingText"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/make_model"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{ item.makeModel == null ? @string/unknown_equipment_item : item.makeModel }"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/contact_name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:textIsSelectable="true"
+                                android:text="@{item.contactName}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <LinearLayout
+                                android:id="@+id/contactActionLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/contact_phone"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <Button
+                                    android:id="@+id/btnContactPhone"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="24dp"
+                                    android:enabled="@{item.contactPhone.length()>0}"
+                                    android:gravity="center_vertical"
+                                    android:padding="0dp"
+                                    android:textColor="@color/colorHeadingText"
+                                    tools:text="123456" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/contact_email"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <Button
+                                android:id="@+id/btnContactEmail"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:enabled="@{item.contactEmail.length()>0}"
+                                android:gravity="center_vertical"
+                                android:padding="0dp"
+                                android:text="@{item.contactEmail}"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorHeadingText"
+                                tools:text="123456" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/problem_description"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.description}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textIsSelectable="true"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/customer_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.customerNumber}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/contract_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="@{item.contractNumber}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <LinearLayout
+                                android:id="@+id/customerActionLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/customer_phone_number"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <Button
+                                    android:id="@+id/btnCustomerPhone"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="24dp"
+                                    android:enabled="@{!item.customerPhoneNumber.empty}"
+                                    android:gravity="center_vertical"
+                                    android:padding="0dp"
+                                    android:textColor="@color/colorHeadingText"
+                                    tools:text="123456" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/equipment_id"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <Button
+                                android:id="@+id/btnEquipmentId"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:enabled="@{item.equipmentNumber != null}"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:padding="0dp"
+                                android:text='@{ item.equipmentNumber == null ? @string/unknown_equipment_item : item.equipmentNumber }'
+                                android:textColor="@{item.equipmentNumber != null ? @color/colorHeadingText : @color/colorMessageText}"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/warranty_date"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedWarrantyDate}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/serial_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.serialNumber}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/due_date"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedDueDate}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/caller"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:id="@+id/txtCaller"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textIsSelectable="true"
+                                android:gravity="center_vertical"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bill_code"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:id="@+id/txtBillCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/terms"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.terms}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/call_priority"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.callPriority}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/equipment_install_date"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.formattedEquipmentInstallDate}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="@{item.pmUseDate || item.pmUseMeter? View.VISIBLE : View.GONE}">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/preventive_maintenance"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="@{item.pmUseDate ? View.VISIBLE : View.GONE}">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:text="@{@string/last_date(item.formattedPMLastDate)}"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        tools:text="123456" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:text="@{@string/pm_due_date(item.formattedPMDueDate)}"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        tools:text="123456" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="@{item.pmUseMeter ? View.VISIBLE : View.GONE}">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:text="@{@string/last_date(item.formattedPMLastDate)}"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        android:visibility="@{!item.pmUseDate ? View.VISIBLE : View.GONE}"
+                                        tools:text="123456" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:text="@{@string/last_display(item.getFormattedLastDisplay)}"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        tools:text="123456" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="center_vertical"
+                                        android:text="@{@string/due_display(item.getFormattedDueDisplay)}"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        tools:text="123456" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/txtIpAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:minHeight="48dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_edit"
+                                    android:drawableRight="@drawable/ic_edit"
+                                    android:drawablePadding="4dp"
+                                    android:text="@string/ip_address"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:focusable="false"
+                                    android:gravity="center_vertical"
+                                    android:text="@{item.ipAddress}"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    tools:text="123456" />
+                            </LinearLayout>
+
+                            <include layout="@layout/view_separator" />
+
+                            <LinearLayout
+                                android:id="@+id/txtMacAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:minHeight="48dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_edit"
+                                    android:drawableRight="@drawable/ic_edit"
+                                    android:drawablePadding="4dp"
+                                    android:text="@string/mac_address"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="@{item.macAddress}"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    tools:text="123456" />
+                            </LinearLayout>
+
+                            <include layout="@layout/view_separator" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/equipment_primary_note"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.equipmentPrimaryNote}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/work_order_number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:text="@{item.workOrderNumber}"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                tools:text="123456" />
+
+                            <include layout="@layout/view_separator" />
+
+                            <LinearLayout
+                                android:id="@+id/txtRemarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:minHeight="48dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableEnd="@drawable/ic_edit"
+                                    android:drawableRight="@drawable/ic_edit"
+                                    android:drawablePadding="4dp"
+                                    android:text="@string/remarks"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/colorHeadingText" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text="@{item.equipmentRemarks}"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    tools:text="123456" />
+                            </LinearLayout>
+
+                            <include layout="@layout/view_separator" />
+
+                            <LinearLayout
+                                android:id="@+id/laySnapshot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:lines="1"
+                                    android:text="@string/snapshot"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    tools:text="123456" />
+
+                                <TextView
+                                    android:id="@+id/txtSnapshotStatus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:lines="1"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    tools:text="123456" />
+
+                                <TextView
+                                    android:id="@+id/txtSnapshotReportingDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:lines="1"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    tools:text="123456" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/buttonsContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSchedule"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/schedule"
+                            android:visibility="@{item.canSchedule() ? View.VISIBLE : View.GONE}" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnDispatch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/dispatch"
+                            android:visibility="@{item.canDispatch() ? View.VISIBLE : View.GONE}" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnHold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="@string/hold"
+                            android:visibility="@{item.canOnHold() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnArrive"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="@string/arrive"
+                            android:visibility="@{item.canArrive() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnUnDispatch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/unDispatch"
+                            android:visibility="@{item.canUnDispatch() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnComplete"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/complete"
+                            android:visibility="@{item.canShowCompleteButton() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnIncomplete"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/incomplete"
+                            android:visibility="@{item.canShowIncompleteButton() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnRelease"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:text="@string/release"
+                            android:visibility="@{item.canRelease() ? View.VISIBLE : View.GONE}"
+                            tools:visibility="gone" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btnCanonSnapshot"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/darker_gray"
+                            android:lines="1"
+                            android:padding="4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/canon"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/progressBarContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ProgressBar
+                            android:layout_width="36dp"
+                            android:layout_height="36dp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

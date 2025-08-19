@@ -1,0 +1,1 @@
+include ':technician', ':signalr-client-sdk-android', ':signalr-client-sdk', ':signalr', ':weekview'

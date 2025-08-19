@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="history_filter_items">
+        <item>FULL INFO</item>
+        <item>USED PARTS</item>
+        <item>CALL REMARKS</item>
+    </string-array>
+</resources>

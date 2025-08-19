@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="isVisible"
+            type="Boolean" />
+        <import type="android.view.View" />
+    </data>
+    <LinearLayout
+        android:id="@+id/progressBarContainer"
+        android:visibility="@{isVisible?View.VISIBLE:View.GONE}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </LinearLayout>
+</layout>

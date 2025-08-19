@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#171D2D</color>
+    <color name="colorPrimaryDark">#171D2D</color>
+    <color name="colorAccent">#00796b</color>
+    <color name="colorHeadingText">#5d2496</color>
+    <color name="colorRequiredFields">#5d2496</color>
+    <color name="colorSeparator">#9E9E9E</color>
+    <color name="colorHint">#787070</color>
+    <color name="colorTitleSeparator">#EFEDED</color>
+    <color name="colorFragmentBackground">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorClockIn">#188a10</color>
+    <color name="colorClockOut">#b6bed4</color>
+    <color name="colorLunchIn">#e8ac1b</color>
+    <color name="colorLunchOut">#e8ac1b</color>
+    <color name="colorLunchCalendar">#80e8ac1b</color>
+    <color name="colorBrakeIn">#03a9f4</color>
+    <color name="colorBrakeOut">#03a9f4</color>
+    <color name="colorBrakeCalendar">#8003a9f4</color>
+    <color name="colorMyMessage">#8d36e3</color>
+    <color name="colorMessage">#e6e6e6</color>
+    <color name="colorButton">#5d2496</color>
+    <color name="colorLoginBackground">#0f1320</color>
+    <color name="colorLoginMainColor">#46526b</color>
+    <color name="loginEditText">#FFFFFF</color>
+    <color name="red">#f44336</color>
+
+    <color name="disabled_button">#aaa</color>
+    <color name="link">#0077CC</color>
+    <color name="transparentBackground">#ddffffff</color>
+    <color name="colorMessageText">#000000</color>
+    <color name="colorCalendarBackground">#FFFFFF</color>
+    <color name="colorOfflineDark">#323232</color>
+    <color name="colorOfflineText">#FFFFFF</color>
+    <color name="colorOnline">#188a10</color>
+    <color name="iconColor">#ee253d</color>
+    <color name="warningRed">#ff3b30</color>
+    <color name="navIconColor">#686463</color>
+    <color name="colorMyMessageSeen">#34b7f1</color>
+    <color name="colorLoaderBackground">#40000000</color>
+    <color name="colorForCustomMarkers">#171D2D</color>
+    <color name="disabledField">#1A000000</color>
+    <color name="listItemBackground">#fafafa</color>
+    <color name="cancelButtonSearchPartDialog">#00786B</color>
+    <color name="meterTextColor">#000000</color>
+
+
+</resources>

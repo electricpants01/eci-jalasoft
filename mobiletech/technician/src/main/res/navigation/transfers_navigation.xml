@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transfers_navigation"
+    app:startDestination="@id/transferFragment">
+
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="eci.technician.activities.transfers.TransferFragment"
+        android:label="@string/warehouse_transfer"
+        tools:layout="@layout/fragment_transfer" >
+        <action
+            android:id="@+id/action_transferFragment_to_selectWarehouseFragment"
+            app:destination="@id/selectWarehouseFragment" />
+        <action
+            android:id="@+id/action_transferFragment_to_selectPartFragment"
+            app:destination="@id/selectPartFragment" />
+        <action
+            android:id="@+id/action_transferFragment_to_selectBinFragment"
+            app:destination="@id/selectBinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectWarehouseFragment"
+        android:name="eci.technician.activities.transfers.SelectWarehouseFragment"
+        android:label="@string/select_warehouse"
+        tools:layout="@layout/fragment_select_warehouse" >
+        <action
+            android:id="@+id/action_selectWarehouseFragment_to_selectPartFragment"
+            app:destination="@id/selectPartFragment" />
+        <action
+            android:id="@+id/action_selectWarehouseFragment_to_selectBinFragment"
+            app:destination="@id/selectBinFragment" />
+        <action
+            android:id="@+id/action_selectWarehouseFragment_to_transferFragment"
+            app:destination="@id/transferFragment"
+            app:popUpTo="@id/transferFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectBinFragment"
+        android:name="eci.technician.activities.transfers.SelectBinFragment"
+        android:label="@string/select_bin"
+        tools:layout="@layout/fragment_select_bin" >
+        <action
+            android:id="@+id/action_selectBinFragment_to_transferFragment"
+            app:destination="@id/transferFragment"
+            app:popUpTo="@id/transferFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="comingFromBin"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPartFragment"
+        android:name="eci.technician.activities.transfers.SelectPartFragment"
+        android:label="@string/select_part"
+        tools:layout="@layout/fragment_select_part" >
+        <action
+            android:id="@+id/action_selectPartFragment_to_selectBinFragment"
+            app:destination="@id/selectBinFragment" />
+        <action
+            android:id="@+id/action_selectPartFragment_to_transferFragment"
+            app:destination="@id/transferFragment"
+            app:popUpTo="@id/transferFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
