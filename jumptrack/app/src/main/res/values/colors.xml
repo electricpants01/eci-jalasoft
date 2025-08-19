@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="qty_target_on">#000000</color>
+	<color name="qty_target_off">#FB9B27</color>
+	<color name="separator">#999999</color>
+	<color name="stop_windowDisplay_normal_text_color">#2b66df</color>
+	<color name="stop_windowDisplay_error_text_color">#990000</color>
+	<color name="prompt_good_text_color">#006600</color>
+	<color name="prompt_warning_text_color">#CC9900</color>
+	<!--<color name="toolbarTextColor">@android:color/white</color>-->
+	<!--<color name="colorPrimary">#990000</color>-->
+
+    <!--FreeAgent style-->
+    <color name="color_primary">#E6E6E6</color>
+    <color name="color_primary_dark">#66737B</color>
+    <color name="color_accent">#6C8CC7</color>
+    <color name="text_color_hint">#6C8CC7</color>
+    <color name="toolbar_text_color">@color/color_primary_dark</color>
+    <color name="e_text_color_normal">#BBBBBB</color>
+    <color name="e_text_color_selected">#58B6AD</color>
+    <color name="app_link_text_color">#4285F4</color>
+
+    <!--Custom colors Login screen-->
+    <color name="login_not_customer_link_text_color">@color/app_link_text_color</color>
+    <color name="login_control">#222222</color>
+    <color name="login_hint">#BBBBBB</color>
+
+    <!--Custom colors Stop screen-->
+    <color name="notify_color">#2b66df</color>
+    <color name="link_text_color" >@color/app_link_text_color</color>
+    <color name="button_ok">#529A2F</color>
+    <color name="button_ok_pressed">#368012</color>
+    <color name="button_ok_disabled">#999999</color>
+
+    <!--Custom colors several screens-->
+    <color name="divider_list_color">#CCCCCC</color>
+    <color name="button_gray_color">#666666</color>
+
+    <!--Custom colors Delivery screen-->
+    <color name="delivery_line_qty_off">#FB9B27</color>
+    <color name="delivery_line_qty_normal">#000000</color>
+
+    <color name="secondaryText">#666666</color>
+
+    <color name="red">#ff0000</color>
+    <color name="edit_bottom_bar">#CCCCCC</color>
+
+    <color name="text_label_color">#686868</color>
+    <color name="image_button_background">#FFFFFF</color>
+    <color name="image_button_background_pressed">#CCCCCC</color>
+    <color name="iconColor">#EF4135</color>
+</resources>

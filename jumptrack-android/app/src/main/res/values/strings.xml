@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JumpTrack</string>
+
+    <!-- Properties -->
+    <string name="versionName"> </string>
+
+    <!-- ASCII Art -->
+    <string name="chevron">&gt;</string>
+    <string name="listicon">o</string>
+    <string name="reorder">=</string>
+    <string name="stopStatus">!</string>
+
+    <!-- Activity Titles -->
+    <string name="login">Login</string>
+    <string name="newcustomerinfo">New Customer Info</string>
+    <string name="routeList">Routes</string>
+    <string name="distributionList">Distribution Centers</string>
+    <string name="regionList">Regions</string>
+    <string name="selectstop">Location List</string>
+    <string name="selectinvoice">Delivery Stop</string>
+    <string name="invoicedetail">Delivery</string>
+    <string name="invoicedelivereddetail">Delivered Detail</string>
+    <string name="signatureProcess">Signature Process</string>
+    <string name="signature">Signature</string>
+    <string name="signatureName">Signature Name</string>
+    <string name="titleRoute">Delivery Stops</string>
+
+    <!-- Text Labels -->
+    <string name="loginLabel">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="notACustomerLabel"><u>Not a Customer?</u></string>
+    <string name="customerLabel">Customer</string>
+    <string name="locationLabel">Location</string>
+    <string name="nameLabel">Name</string>
+    <string name="truckListEmptyLabel">No routes found.\n\nPlease select \'Refresh\' from the pop-up menu to reload the route list.</string>
+    <string name="acceptLabel">Accept</string>
+    <string name="acceptAllLabel">Accept All</string>
+    <string name="of">of</string>
+    <string name="signedByLabel">Signed By:</string>
+    <string name="deliveredLabel">Delivered:</string>
+    <string name="returnLabel">Accept Pickup</string>
+    <string name="searchLabel">Search</string>
+    <string name="searchActive">Searching…</string>
+    <string name="searchRoutesLabel">Filter List</string>
+    <string name="deleteItemLabel">Remove</string>
+    <string name="addItemLabel">Add Item</string>
+    <string name="doneLabel">Done</string>
+    <string name="mapLabel">Map</string>
+    <string name="noteLabel">Note</string>
+    <string name="photoLabel">Photo</string>
+    <string name="deliveryLabel">Delivery #: </string>
+    <string name="addNoteLabel">Add Note</string>
+    <string name="itemDetailLabel">Product</string>
+    <string name="cameraButtonLabel">Photo</string>
+    <string name="notesButtonLabel">Note</string>
+    <string name="mapButtonLabel">Map</string>
+    <string name="yourNotesLabel">Driver Note:</string>
+    <string name="qtyLabel">Qty</string>
+    <string name="oneLabel">1</string>
+    <string name="deliveryNotesLabel">Delivery Notes</string>
+    <string name="deleteLabel">Delete</string>
+    <string name="warningLabel">Warning</string>
+    <string name="descriptionUnavailable">Description unavailable</string>
+    <string name="continueLabel">Continue</string>
+    <string name="cancelSignatureLabel">Cancel signature</string>
+    <string name="multipleLabel">Multiple</string>
+
+    <!-- Tab Labels -->
+    <string name="inTransitTabLabel">In Transit</string>
+    <string name="completedTabLabel">Completed</string>
+    <string name="notSyncedTabLabel">Not Synced</string>
+
+    <!-- Menu Item Labels -->
+    <string name="settings">Settings</string>
+    <string name="refreshTruckList">Refresh</string>
+    <string name="scan">Scan</string>
+    <string name="partial_enable">Enable Partial</string>
+    <string name="partial_disable">Disable Partial</string>
+    <string name="reorder_item">Reorder</string>
+    <string name="syncNow">Sync Now</string>
+    <string name="changeTrucks">Exit Route</string>
+    <string name="logout">Logout</string>
+    <string name="aboutAndSupport">About &amp; Support</string>
+    <string name="more">More Options</string>
+
+    <!-- About Dialog Text -->
+    <string name="copyright">Copyright &#169; 2018-2021 ECI Software Solutions, Inc.\nAll rights reserved.</string>
+    <string name="trademark"></string>
+    <string name="cancel">Cancel</string>
+
+    <!-- New Customer Info Text -->
+    <string name="introParagraph">JumpTrack requires a user license that is available from ECI Software Solutions, Inc. For information on our different plans and pricing please call or email us at:</string>
+    <string name="email">jumptracksales@ecisolutions.com</string>
+    <string name="phoneNumber">1-800-366-4778</string>
+    <string name="additionalInfoParagraph">Additional information about the JumpTrack Proof-of-Delivery system can be found on our web site at www.ecisolutions.com.</string>
+
+    <!-- Dialog messages -->
+    <string name="emptyUsername">Please enter your username.</string>
+    <string name="emptyPassword">Please enter your password.</string>
+    <string name="authenticating">Authenticating…</string>
+    <string name="authenticationIncorrect">Username or password incorrect.</string>
+    <string name="authenticationError">An error occurred while trying to authenticate. Please try again later.</string>
+    <string name="truckListReturnWithInvoicesNotSynced">Some deliveries have not been synced. Cannot return to route list.</string>
+    <string name="truckListFromServerError">An error occurred while trying to retrieve the route list. Using saved route list instead.</string>
+    <string name="noInvoicesForTruck">No deliveries for this route.</string>
+    <string name="deliveryItemAlreadyDelivered">The $$invoiceType$$ with id \'$$invoiceId$$\' has already been marked as completed.</string>
+    <string name="deliveryItemNotFound">No invoice or RMA found with id \'$$invoiceId$$\'.</string>
+    <string name="deliveryStopListFromServerError">An error occurred while trying to retrieve the location list. Please try again later.</string>
+    <string name="acceptedQtyTooLarge">The quantity you entered is too large for $$packageType$$.</string>
+    <string name="signatureSaveError">An error occurred while attempting to save the signature.</string>
+    <string name="deliveryOverAcceptWarning">You have entered MORE THAN the loaded quantity. Do you want to mark this $$invoiceType$$ as ACCEPTED?</string>
+    <string name="deliveryAcceptWarning">You did not change any of the quantities. Do you want to mark this $$invoiceType$$ as ACCEPTED?</string>
+    <string name="deliveryPartiallyAcceptWarning">You changed some of the quantities. Do you want to mark this $$invoiceType$$ as PARTIALLY ACCEPTED?</string>
+    <string name="deliveryRefuseWarning">You set all quantities to 0. Do you want to mark this $$invoiceType$$ as REFUSED?</string>
+    <string name="stopDeliveriesWithInvoices">There are deliveries in transit</string>
+    <string name="deliveriesComplete">Your deliveries are complete.</string>
+    <string name="deliveriesCompleteNeedToSync">Your deliveries are complete, but some deliveries haven\'t been synced.</string>
+    <string name="promptSyncSignature">There are deliveries that have not been sent to the server. Do you want to try to send again? </string>
+    <string name="promptSyncPhoto">You have photos that are not synced with the server. Would you like to sync now?</string>
+    <string name="promptSyncStopOrder">Stop order has not been synced with the server. Would you like to sync now?</string>
+    <string name="promptSyncGPS">GPS data was not able to be sent to the server. Do you want to try to send it again? </string>
+    <string name="promptSyncFailed">All data could not be synced with server. Would you like to try to sync again?</string>
+    <string name="promptRelog">You have logged into another device. Log in to complete route.</string>
+    <string name="emptySignatureName">Please enter a name for the signature.</string>
+    <string name="unablePersistSignature">Unable to persist signature.</string>
+    <string name="signatureProcessCancel">Are you sure you want to cancel this signature?</string>
+    <string name="logoutConfirm">Are you sure you want to logout?</string>
+    <string name="loadTruckList">Processing</string>
+    <string name="noNetwork">Network unavailable. Please try again when you have a network connection.</string>
+    <string name="deliveryPartialPlate">Missing %d items in delivery.\nDo you want to accept this as a partial delivery?</string>
+    <string name="discardEditsTitle">Discard changes?</string>
+    <string name="discardEdits">Backing out of delivery will delete your modifications and/or scans.</string>
+    <string name="itemNotInDelivery">The item you scanned is not in this delivery and will be ignored.</string>
+    <string name="itemAlreadyScanned">The item was already scanned and will be ignored.</string>
+    <string name="maxPhotosReached">Max Photos Reached\nYou are only allowed to take %d photo(s)</string>
+    <string name="finalizing">Finalizing route on server…</string>
+    <string name="noNetworkProductLookup">Network Unavailable\nProduct lookup feature is not available. UPC/SKU will be saved without verification.</string>
+    <string name="productNotFound">Product Not Found\nThe product code was not found. Do you still want to save it?</string>
+    <string name="emptySig">Empty signature not allowed</string>
+    <string name="selectPartialReasons">Select partial reasons</string>
+    <string name="setScanner">Set scanner type</string>
+    <string name="discardWarning">All items will be removed</string>
+    <string name="unableToSaveSig">Unable to save signature</string>
+    <string name="unableToAccessExternal">Unable to access external directory, attachment cannot be added</string>
+    <string name="noDc">You have no distribution centers assigned. Please contact your account administrator to assign at least one distribution center to your user</string>
+    <string name="routeUpdateOnServer">Route has been updated on the server.</string>
+    <string name="routeUpdateOnServerMessageContent">Press OK to continue. </string>
+    <string name="gps_data_no_sync">GPS tracking data</string>
+    <string name="server_address_invalid_url_msg">Invalid JumpTrack URL</string>
+
+    <!-- toast -->
+    <string name="bluetoothConnected">Bluetooth device connected</string>
+    <string name="bluetoothConnecting">Bluetooth device connecting...</string>
+    <string name="bluetoothConnectedDevice">Connected to %s</string>
+
+    <!-- More Activity -->
+    <string name="feedback">Feedback</string>
+    <string name="feedbackSend">Send Feedback</string>
+    <string name="support">Support</string>
+    <string name="aboutApp">About this app</string>
+    <string name="scannerType">Scanner Type</string>
+    <string name="returns">Pickups</string>
+    <string name="takeReturn">Unscheduled Pickup</string>
+    <string name="takeDelivery">Unscheduled Delivery</string>
+
+    <!-- Scan -->
+    <string name="menu_scanner_type">Scanner Type</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_exit_route">Exit Route</string>
+    <string name="btScan">Bluetooth Scanner</string>
+    <string name="notConnected">Not Connected</string>
+    <string name="noKdcFound">No KDC devices were found.\nTry turning on pairing on your scanner by going to:\nKDC Menu >\nBT Service >\nPairing</string>
+
+    <!-- Feedback -->
+    <string name="feedbackTitle">Feedback</string>
+    <string name="rateAppLabel">How would you rate JumpTrack?</string>
+    <string name="feedbackEmailLabel">Email (optional)</string>
+    <string name="feedbackEmail">jumptracksupport@ecisolutions.com</string>
+    <string name="feedbackEmailHint">you@email.com</string>
+    <string name="feedback1"> 1 </string>
+    <string name="feedback2"> 2 </string>
+    <string name="feedback3"> 3 </string>
+    <string name="feedback4"> 4 </string>
+    <string name="feedback5"> 5 </string>
+
+    <!-- Support -->
+    <string name="techSuppLabel">Technical support is charged dynamically</string>
+    <string name="techSuppEmail">jumptracksupport@ecisolutions.com</string>
+    <string name="supportContactTitle">Support Contact</string>
+    <string name="supportStatusTitle">JumpTrack Status</string>
+    <string name="versionNumberLabel">JumpTrack Version:</string>
+    <string name="sendToServerButton">Email Delivery Data to Support</string>
+    <string name="permissionStatusTitle">Permissions Status</string>
+    <string name="support_should_allow_camera_msg">You must enable camera access in order to use this feature.</string>
+    <string name="support_should_allow_gps_msg">You must allow JumpTrack access to your Location for GPS Tracking to operate.</string>
+    <string name="support_should_allow_storage_msg">You must allow JumpTrack access to Storage to save images.</string>
+    <string name="support_should_allow_write_external_storage_msg">JumpTrack requires access to Storage for the Hardware Scanner.</string>
+    <string name="support_permission_camera_title">Camera</string>
+    <string name="support_permission_location_title">Location</string>
+    <string name="support_permission_storage_title">Storage</string>
+
+    <!-- Scanner Type -->
+    <string name="emailNote">If you want a response</string>
+    <string name="submitFeedback">Submit feedback</string>
+
+    <!-- SIGNATURE Location on SDCARD -->
+    <string name="signaturePath">/JumpTech/JumpTrack</string>
+    <string name="editLocList">Reorder Stops</string>
+
+    <!-- Image Content Description -->
+    <string name="sigContDesc">Signature Preview</string>
+    <string name="logoContDesc">JumpTrack Logo</string>
+    <string name="deliveryImage">Delivery Image</string>
+    <string name="signatureImage">Signature Image</string>
+
+    <!-- Hints -->
+    <string name="customerNameHint">Signee Name</string>
+    <string name="enterReturnHint">Enter SKU or UPC</string>
+    <string name="enterNoteHint">Enter a note</string>
+
+    <!-- Strings -->
+    <string name="acceptSelected">Accept Selected</string>
+    <string name="bad">Bad</string>
+    <string name="bluetoothAvailable">Available</string>
+    <string name="bluetoothStatus">Bluetooth Status</string>
+    <string name="bluetoothWaiting">Waiting</string>
+    <string name="camera">Built-in Camera</string>
+    <string name="comment">Comment</string>
+    <string name="devices">Connected devices: </string>
+    <string name="empty"></string>
+    <string name="fetchRouteNoWait">Retrieving Route…</string>
+    <string name="fetchRouteWait">Optimizing Route…</string>
+    <string name="great">Great</string>
+    <string name="loggedIn">Logged In</string>
+    <string name="networkConnection">Network Connection</string>
+    <string name="onoff">On/Off</string>
+    <string name="save">Save</string>
+    <string name="serverConnection">Server Connection</string>
+    <string name="socketMobile">Socket Mobile</string>
+    <string name="companyName">Company Name</string>
+    <string name="acceptDelivery">Accept Delivery</string>
+    <string name="partialReasonLabel">Partial Reason</string>
+    <string name="submitServer">Syncing with server.</string>
+    <string name="tracking">Tracking Location</string>
+    <string name="userOverride">Route is currently active and being used by another. If you continue you will kick them out of the route. Would you like to continue?</string>
+    <string name="pickupDetail">Pickup</string>
+    <string name="pickups">Pickups</string>
+    <string name="no">No</string>
+    <string name="navigationUnavailable">Navigation unavailable on device</string>
+    <string name="scanningAlignBarcode">Align barcode inside box</string>
+    <string name="scanningHoldStill">Hold still for scan</string>
+    <string name="scanDeliveryNotFound">No delivery matches scan.</string>
+    <string name="authorName">ECI Software Solutions, Inc.</string>
+    <string name="thirdPartyLicenses">Third Party Licenses</string>
+    <string name="serverLabel">Server: </string>
+    <string name="reset">Reset</string>
+    <string name="login_show_password">Show Password</string>
+
+    <!-- EULA screen -->
+    <string name="eula_accept_button_label">Accept</string>
+    <string name="eula_ok_button_label">OK</string>
+    <string name="eulaVersion">201607</string>
+    <string name="eulaName">%1$s Android</string>
+    <string name="eulaRequestError">An error occurred while trying to notify EULA acceptance. Please try again later.</string>
+    <string name="termsOfUse">Terms Of Use</string>
+    <string name="app_empty_name" />
+
+    <!--Android Signature Pad-->
+    <string name="save_signature">Accept</string>
+    <string name="clear_pad">Clear</string>
+
+    <!--Android Notifications-->
+    <string name="notification_gps_channel">JumpTrack GPS</string>
+    <string name="notification_gps_title">JumpTrack GPS</string>
+    <string name="notification_gps_description">Location tracking for Planned vs Actual report.</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_token_key" translatable="false">fcm_token_key</string>
+
+    <string name="install_socket_mobile_app_message">In order to connect to your Socket Mobile scanner, you need to install and run the Socket Mobile Companion app from the Google Play Store.</string>
+    <string name="open_socket_mobile_app_message">You need to configure the scanner.</string>
+    <string name="install">Install</string>
+    <string name="socket_mobile_ready_use">Scanner ready for use.</string>
+
+    <string name="pending_message_key" translatable="false">pendingMessageKey</string>
+    <string name="ignore_camera_scan_key" translatable="false">ignoreCameraScanKey</string>
+    <string name="current_delivery_key" translatable="false">currentDeliveryKey</string>
+    <string name="location_is_dialog_denied_key" translatable="false">isDialogDenied</string>
+
+    <string name="format_quantity" translatable="false">%1$d of %2$d</string>
+    <string name="error">Error</string>
+    <string name="error_security_provider_updater">Error installing provider</string>
+    <string name="unscanned_items_message">There are unscanned items for this delivery, do you want to accept as a Partial Delivery?</string>
+    <string name="base_url_key" translatable="false">server</string>
+
+
+    <string name="routeUpdatedNotificationTitle">Route Update</string>
+    <string name="location_permission_q">You must enable GPS on your device to use this feature. Please open JumpTrack settings and set location access to \'Always\'.</string>
+    <string name="go_settings">Go To Settings</string>
+    <string name="location_permission_before_q">You must enable GPS on your device to use this feature. Please open JumpTrack permission settings and enable \'Location\' access.</string>
+
+    <!--Location Permissions-->
+    <string name="location_always">Always</string>
+    <string name="location_when_in_use">When in use</string>
+    <string name="location_no_access">No access</string>
+    <string name="leaveRoute">Leave Route</string>
+    <string name="discard">Discard</string>
+    <string name="cancelPickup">Cancel Pickup</string>
+    <string name="cancelDelivery">Cancel Delivery</string>
+    <string name="leaveRouteQuestion">Leave Route?</string>
+    <string name="discardPickups">Discard Pickups?</string>
+    <string name="discardDeliveries">Discard Delivery?</string>
+    <string name="location_access_required">Location access required</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="camera_access_required">Camera access required</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_results_found">No results were found</string>
+
+    <string name="item_ignored">Item Ignored</string>
+    <string name="item_not_on_delivery">Item not in this delivery</string>
+    <string name="select_map_app">Select a Map application</string>
+    <string name="select_defaul_map">Select Default</string>
+    <string name="select_map">Maps App</string>
+    <string name="location_disclosure">JumpTrack collects location data to enable: Delivery ETAs, Route Optimization, Geofencing, and Delivery Efficiency Reporting.</string>
+    <string name="location_disclosure_allow_all_the_time_text">For maximum efficiency please select <b>Allow all the time</b> when enabling location permissions.</string>
+    <string name="location_disclosure_allow_all_the_time_text_android_12">For maximum efficiency please select <b>Precise</b> and <b>Allow all the time</b> when enabling location permissions.</string>
+    <string name="turn_on">Turn On</string>
+    <string name="no_thanks">No Thanks</string>
+
+</resources>

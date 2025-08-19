@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="socket_mobile_app_key" translatable="false">MC4CFQCCpLOaBPJ+JRysA+b8F5G2LCjVDgIVAJiL/lNCpxoYghS1e3EXag707W+2</string>
+        <string name="socket_mobile_developer_id" translatable="false">44ecf277-95ee-4d14-a7e6-34cd19817176</string>
+</resources>

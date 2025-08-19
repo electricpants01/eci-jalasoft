@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/LocationLinearLayout"
+        style="@style/deliveryListTop"
+        android:background="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/windowBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneNumber">
+
+            <ImageView
+                android:id="@+id/stopWindowError"
+                style="@style/stopStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/stopStatus"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/window"
+                style="@style/companyAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/stop_windowDisplay_normal_text_color"
+                android:visibility="gone"
+                tools:text="Window" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stopName"
+            style="@style/companyName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:text="Stop name" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/companyAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stopName"
+            tools:text="Address" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            style="@style/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            tools:text="Phone" />
+
+        <LinearLayout
+            android:id="@+id/signingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/windowBase"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPhotoInfo"
+                style="@style/companyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/camera_icon"
+                android:drawableLeft="@drawable/camera_icon"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="-/-" />
+
+            <TextView
+                android:id="@+id/driverNote"
+                style="@style/driverNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/note_icon"
+                android:drawableLeft="@drawable/note_icon"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_between_buttons">
+
+                <ImageButton
+                    android:id="@+id/cameraButton"
+                    android:elevation="1dp"
+                    android:src="@drawable/camera_icon"
+                    style="@style/imageButtonStyle"/>
+
+                <ImageButton
+                    android:id="@+id/noteButton"
+                    android:elevation="1dp"
+                    android:src="@drawable/note_icon"
+                    style="@style/imageButtonStyle"/>
+
+                <ImageButton
+                    android:id="@+id/mapButton"
+                    android:elevation="1dp"
+                    android:src="@drawable/map_icon"
+                    style="@style/imageButtonStyle"/>
+
+                <Button
+                    android:id="@+id/acceptAllButton"
+                    style="@style/primaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:elevation="1dp"
+                    android:text="@string/acceptAllLabel"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/rowseparator" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDeliveries"
+        style="@style/generalList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <include layout="@layout/rowseparator" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bkgSecondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/deliveryListTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/siteName"
+            style="@style/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/deliveryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/siteName">
+
+            <TextView
+                android:id="@+id/deliveryLabel"
+                style="@style/deliveryNumberLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deliveryLabel" />
+
+            <TextView
+                android:id="@+id/deliveryName"
+                style="@style/deliveryNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/deliveryLabel"
+                android:layout_toRightOf="@+id/deliveryLabel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/stopLevelNoteText"
+            style="@style/notesInput"
+            android:layout_width="match_parent"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_height="match_parent"
+            android:minLines="4" >
+            <requestFocus/>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/editButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/stopLevelNoteCancelButton"
+            style="@style/tertiaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/stopLevelNoteSaveButton"
+            style="@style/primaryEditButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/save"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
